@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.f1 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.f2,
+.f3,
+.f4,
+.f5,
+.f6,
+.f7 {
+    width: calc(16.66% - 17px);
+    height: 220px;
+
+    background-color: darkred;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+
+/* 1200px dan kichik */
+@media (max-width: 1200px) {
+
+    .f1 {
+        background-color: red;
+    }
+
+    .f2,
+    .f3,
+    .f4,
+    .f5,
+    .f6,
+    .f7 {
+        background-color: black;
+        width: calc(33.33% - 14px);
+    }
+}
+
+
+/* 800px dan kichik */
+@media (max-width: 800px) {
+
+    .f1 {
+        background-color: purple;
+    }
+
+    .f2,
+    .f3,
+    .f4,
+    .f5,
+    .f6,
+    .f7 {
+        background-color: coral;
+        width: calc(50% - 10px);
+    }
+}
+
+
+/* 500px dan kichik */
+@media (max-width: 500px) {
+
+    .f1 {
+        background-color: purple;
+    }
+
+    .f2,
+    .f3,
+    .f4,
+    .f5,
+    .f6,
+    .f7 {
+        background-color: coral;
+        width: 100%;
+    }
+}
